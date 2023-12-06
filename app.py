@@ -20,7 +20,7 @@ button = st.button("Crear gráfico de dispersión")
 # Si se hace clic en el botón
 if button:
     # Creamos el gráfico de dispersión
-    fig = px.scatter(car_data, x="hp", y="mpg")
+    fig = px.scatter(car_data, x="model_year", y="price")
 
     # Mostramos el gráfico
     st.plotly_chart(fig)
